@@ -58,6 +58,9 @@
     @media(max-width:1100px){header .navlinks{gap:14px}header .nav{gap:18px}.header-actions{gap:8px}.language-switch button{padding:6px 8px;min-width:32px}}
     @media(max-width:1000px){header .nav{width:calc(100% - 36px);min-height:78px;grid-template-columns:1fr auto auto;gap:12px}header .brand{font-size:1.25rem}header .menu{display:block;grid-column:3;grid-row:1;min-height:44px;color:#342820}header .header-actions{grid-column:2;grid-row:1}.header-actions .header-whatsapp{min-height:44px;padding:10px 16px;font-size:.82rem}header .navlinks{grid-column:1/-1;grid-row:2;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0 0 18px}header .navlinks[hidden]{display:none}header .navlinks>a{padding:11px 0;font-size:.95rem}header .navlinks>a::after{right:auto;width:32px;bottom:4px}}
     @media(max-width:400px){header .nav{gap:8px}header .brand{font-size:1.1rem}.header-actions{gap:6px}.header-actions .header-whatsapp{padding:10px;font-size:.73rem}.language-switch button{font-size:.71rem;min-width:29px;padding:5px 6px}header .menu{padding:8px;font-size:.8rem}}
+  /* EDIT: Keep repayment totals readable on smaller screens. */
+    .mortgage-totals dd{white-space:nowrap}
+    @media(max-width:1000px){.mortgage-totals{grid-template-columns:1fr;gap:10px}.mortgage-totals>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.mortgage-totals dt{font-size:.7rem}.mortgage-totals dd{font-size:.85rem;margin:0}}
   </style>
   <!-- EDIT: REN44970 agrees with the bio and NextSix; supplied ABOUT ME said REN449700. Confirm before launch. -->
   <!-- EDIT: Structured data must stay consistent with the visible contact details and FAQ. -->
