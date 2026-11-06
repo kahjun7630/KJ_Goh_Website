@@ -49,6 +49,15 @@
     .header-whatsapp:hover{background:#4a392e}
     @media(max-width:1100px){header .nav{width:calc(100% - 48px);gap:20px}header .navlinks{gap:22px}header .navlinks>a{font-size:.88rem}.header-whatsapp{padding:11px 20px;font-size:.9rem}}
     @media(max-width:850px){header .nav{width:calc(100% - 36px);min-height:78px;grid-template-columns:1fr auto auto;gap:12px}header .brand{font-size:1.25rem}header .menu{display:block;grid-column:3;grid-row:1;min-height:44px;border-color:#d9cfc4;color:#342820}header .header-whatsapp{grid-column:2;grid-row:1;min-height:44px;padding:10px 16px;font-size:.82rem;border-radius:10px}header .navlinks{grid-column:1/-1;grid-row:2;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0 0 18px}header .navlinks[hidden]{display:none}header .navlinks>a{padding:11px 0;font-size:.95rem}header .navlinks>a::after{right:auto;width:32px;bottom:4px}html{scroll-padding-top:90px}}
+  /* EDIT: Calculator colours and spacing. */
+    .mortgage{background:#eee4d7;color:#342820}.mortgage .eyebrow{color:#695345}.mortgage-intro{max-width:650px;margin-top:18px;color:#72685e}.mortgage-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:38px;align-items:stretch}.mortgage-form,.mortgage-result{padding:34px;border-radius:22px}.mortgage-form{background:#fff;border:1px solid #ded4c8}.mortgage-form label,.result-label{text-transform:uppercase;font-size:.76rem;letter-spacing:.04em}.input-unit{display:flex;align-items:stretch;border:1px solid #ded2c4;border-radius:12px;overflow:hidden}.input-unit>span{display:flex;align-items:center;justify-content:center;min-width:52px;padding:10px;background:#f4efe9;border-right:1px solid #ded2c4;font-weight:600;color:#72685e;font-size:.83rem}.input-unit input{border:0;border-radius:0;min-width:0;background:white;min-height:56px}.input-unit:focus-within{outline:3px solid #ad7931;outline-offset:3px}.input-unit input:focus-visible{outline:0}.mortgage-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mortgage-calculate{width:100%;margin-top:8px;background:#342820;color:white;border-radius:12px;min-height:55px}.mortgage-result{background:#342820;color:white;display:flex;flex-direction:column;justify-content:space-between}.monthly-amount{font:600 clamp(2rem,4vw,3.4rem)/1.25 Poppins,sans-serif;color:#e1b12f;margin-top:14px;overflow-wrap:anywhere;letter-spacing:-.04em}.mortgage-hint{font-size:.85rem;color:#d4c8bb;margin-top:10px}.mortgage-totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;border-top:1px solid #ffffff26;padding-top:24px;margin:28px 0}.mortgage-totals dt{font-size:.7rem;text-transform:uppercase;color:#c5b7a9}.mortgage-totals dd{margin:6px 0 0;font-size:.95rem;font-weight:600;overflow-wrap:anywhere}.mortgage-discuss{background:#e1b12f;color:#2a2018;width:100%;text-align:center;border-radius:12px}.mortgage-error{color:#a12525;min-height:1.7em;font-size:.82rem;margin-top:12px}.mortgage-disclaimer{font-size:.76rem;line-height:1.7;color:#74685e;margin-top:20px}
+    @media(max-width:850px){.mortgage-grid{gap:24px}.mortgage-form,.mortgage-result{padding:24px}}
+    @media(max-width:700px){.mortgage-grid{grid-template-columns:1fr;margin-top:28px}.mortgage-form,.mortgage-result{padding:22px}.mortgage-totals{gap:12px}.mortgage-totals dd{font-size:.85rem}.mortgage-fields{gap:12px}.input-unit>span{min-width:40px}.input-unit input{padding:12px 10px}.mortgage-disclaimer{font-size:.72rem}}
+  /* EDIT: Language switch styling. */
+    .header-actions{display:flex;align-items:center;justify-self:end;gap:12px;white-space:nowrap}.language-switch{display:flex;align-items:center;padding:3px;border:1px solid #ded4c8;border-radius:100px;background:#fff}.language-switch button{border:0;border-radius:100px;min-width:38px;min-height:36px;padding:6px 10px;background:transparent;color:#756a61;font-size:.78rem;font-weight:700}.language-switch button[aria-pressed="true"]{background:#342820;color:white}header .navlinks{gap:24px}header .nav{gap:24px;grid-template-columns:auto 1fr auto}
+    @media(max-width:1100px){header .navlinks{gap:14px}header .nav{gap:18px}.header-actions{gap:8px}.language-switch button{padding:6px 8px;min-width:32px}}
+    @media(max-width:1000px){header .nav{width:calc(100% - 36px);min-height:78px;grid-template-columns:1fr auto auto;gap:12px}header .brand{font-size:1.25rem}header .menu{display:block;grid-column:3;grid-row:1;min-height:44px;color:#342820}header .header-actions{grid-column:2;grid-row:1}.header-actions .header-whatsapp{min-height:44px;padding:10px 16px;font-size:.82rem}header .navlinks{grid-column:1/-1;grid-row:2;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0 0 18px}header .navlinks[hidden]{display:none}header .navlinks>a{padding:11px 0;font-size:.95rem}header .navlinks>a::after{right:auto;width:32px;bottom:4px}}
+    @media(max-width:400px){header .nav{gap:8px}header .brand{font-size:1.1rem}.header-actions{gap:6px}.header-actions .header-whatsapp{padding:10px;font-size:.73rem}.language-switch button{font-size:.71rem;min-width:29px;padding:5px 6px}header .menu{padding:8px;font-size:.8rem}}
   </style>
   <!-- EDIT: REN44970 agrees with the bio and NextSix; supplied ABOUT ME said REN449700. Confirm before launch. -->
   <!-- EDIT: Structured data must stay consistent with the visible contact details and FAQ. -->
@@ -66,10 +75,11 @@
         <a href="#about" aria-current="location">About</a>
         <a href="#why">Services</a>
         <a href="#listings">Listings</a>
+        <a href="#calculator">Calculator</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </div>
-      <a class="header-whatsapp" href="https://wa.me/601117776884?text=Hi%20KJ%2C%20I%27d%20like%20to%20discuss%20property.">WhatsApp</a>
+      <div class="header-actions"><a class="header-whatsapp" href="https://wa.me/601117776884?text=Hi%20KJ%2C%20I%27d%20like%20to%20discuss%20property.">WhatsApp</a><div class="language-switch" role="group" aria-label="Language / 语言"><button type="button" data-language="en" lang="en" aria-pressed="false">EN</button><button type="button" data-language="zh" lang="zh-Hans" aria-pressed="true">中文</button></div></div>
       <button class="menu" type="button" aria-expanded="true" aria-controls="navlinks">Menu</button>
     </nav>
   </header>
@@ -132,6 +142,36 @@
         <!-- EDIT: The separately supplied Nusa Sentral page is not featured: https://apps.nextsix.com/p/6a5074664a4e3fb6c0d1232d . It lists RM788,000, 4 beds and 1,540 sqft built-up, but its overview says 2 bathrooms while its description says 3. Confirm before featuring it. -->
       </div>
     </section>
+
+    <!-- EDIT: Mortgage calculator copy, example inputs and contact destination. -->
+    <section class="section mortgage" id="calculator" aria-labelledby="calculator-title">
+      <div class="wrap">
+        <p class="eyebrow">Plan ahead</p>
+        <h2 id="calculator-title">Mortgage Calculator</h2>
+        <p class="mortgage-intro">Get a quick estimate of your monthly repayment for a residential or commercial property in Johor Bahru.</p>
+        <div class="mortgage-grid">
+          <form class="mortgage-form" id="mortgage-form" novalidate>
+            <div class="field"><label for="loan-amount">Loan amount</label><div class="input-unit"><span aria-hidden="true">RM</span><input id="loan-amount" name="loanAmount" type="text" inputmode="decimal" autocomplete="off" required maxlength="20" placeholder="e.g. 450,000" aria-describedby="mortgage-error"></div></div>
+            <div class="mortgage-fields">
+              <div class="field"><label for="loan-rate">Interest rate (per year)</label><div class="input-unit"><span aria-hidden="true">%</span><input id="loan-rate" name="interestRate" type="number" min="0" max="100" step="any" required placeholder="e.g. 4.0" aria-describedby="mortgage-error"></div></div>
+              <div class="field"><label for="loan-years">Loan tenure (years)</label><div class="input-unit"><span aria-hidden="true">Yrs</span><input id="loan-years" name="loanYears" type="number" min="1" max="50" step="1" required placeholder="e.g. 30" aria-describedby="mortgage-error"></div></div>
+            </div>
+            <button type="submit" class="btn mortgage-calculate">Calculate Monthly Mortgage</button>
+            <p id="mortgage-error" class="mortgage-error" role="alert"></p>
+          </form>
+          <div class="mortgage-result">
+            <div aria-live="polite" aria-atomic="true">
+              <p class="result-label">Estimated monthly repayment</p>
+              <p class="monthly-amount" id="monthly-amount">RM —</p>
+              <p class="mortgage-hint" id="mortgage-hint">Fill in the fields and press Calculate</p>
+              <dl class="mortgage-totals"><div><dt>Loan amount</dt><dd id="result-principal">RM —</dd></div><div><dt>Total interest</dt><dd id="result-interest">RM —</dd></div><div><dt>Total payment</dt><dd id="result-total">RM —</dd></div></dl>
+            </div>
+            <a class="btn mortgage-discuss" id="mortgage-discuss" href="https://wa.me/601117776884?text=Hi%20KJ%2C%20I%27d%20like%20to%20discuss%20property%20financing.">Discuss This With KJ Goh</a>
+          </div>
+        </div>
+        <p class="mortgage-disclaimer">This calculator estimates a fixed-rate, fully amortising loan with monthly repayments. It excludes fees, insurance and rate changes. Results are for reference only, not financial advice or a loan offer. Actual repayments and eligibility depend on the bank’s assessment. Speak with KJ Goh or your bank for an accurate quote.</p>
+      </div>
+    </section>
     <section class="section why" id="why" aria-labelledby="why-title">
       <div class="wrap">
         <!-- EDIT -->
@@ -177,7 +217,7 @@
       const recipient = '601117776884';
       const menu = document.querySelector('.menu');
       const links = document.getElementById('navlinks');
-      const mobile = matchMedia('(max-width:850px)');
+      const mobile = matchMedia('(max-width:1000px)');
       function setMenu(open) { links.hidden = !open; menu.setAttribute('aria-expanded', String(open)); }
       function syncMenu() { setMenu(!mobile.matches); }
       syncMenu();
@@ -190,9 +230,10 @@
       const sectionLinks = [...links.querySelectorAll('a[href^="#"]')];
       function updateActiveLink() {
         let current = sectionLinks[0];
+        let closestTop = -Infinity;
         sectionLinks.forEach(link => {
           const section = document.querySelector(link.getAttribute('href'));
-          if (section && section.getBoundingClientRect().top <= 150) current = link;
+          if (section) { const top = section.getBoundingClientRect().top; if (top <= 150 && top > closestTop) { current = link; closestTop = top; } }
         });
         sectionLinks.forEach(link => {
           if (link === current) link.setAttribute('aria-current', 'location');
@@ -214,13 +255,13 @@
       form.addEventListener('submit', event => {
         event.preventDefault();
         const digits = phone.value.replace(/\D/g, '');
-        phone.setCustomValidity(digits.length >= 8 && digits.length <= 15 ? '' : 'Please enter a phone number containing 8–15 digits.');
+        phone.setCustomValidity(digits.length >= 8 && digits.length <= 15 ? '' : (window.siteLanguage === 'zh' ? '请输入包含 8–15 位数字的电话号码。' : 'Please enter a phone number containing 8–15 digits.'));
         if (!form.reportValidity()) return;
         const name = document.getElementById('name').value.trim();
         const message = document.getElementById('message').value.trim();
-        if (!name || !message) { document.getElementById('form-status').textContent = 'Please enter your name and property plans.'; return; }
-        const draft = `Hi KJ, I’d like to discuss my property plans.\n\nName: ${name}\nPhone: ${phone.value.trim()}\n\n${message}`;
-        document.getElementById('form-status').textContent = 'Opening your WhatsApp draft. Review it and press Send there.';
+        if (!name || !message) { document.getElementById('form-status').textContent = (window.siteLanguage === 'zh' ? '请填写姓名和房产计划。' : 'Please enter your name and property plans.'); return; }
+        const draft = window.siteLanguage === 'zh' ? `KJ 你好，我想咨询房产。\n\n姓名：${name}\n电话：${phone.value.trim()}\n\n${message}` : `Hi KJ, I’d like to discuss my property plans.\n\nName: ${name}\nPhone: ${phone.value.trim()}\n\n${message}`;
+        document.getElementById('form-status').textContent = (window.siteLanguage === 'zh' ? '正在打开 WhatsApp 草稿，请确认后点击发送。' : 'Opening your WhatsApp draft. Review it and press Send there.');
         window.location.assign(`https://wa.me/${recipient}?text=${encodeURIComponent(draft)}`);
       });
       document.querySelectorAll('img').forEach(image => {
@@ -232,6 +273,103 @@
         });
       });
     })();
+  </script>
+
+  <!-- EDIT: Standard monthly amortisation calculation and WhatsApp draft wording. -->
+  <script id="mortgage-script">
+    function calculateMortgage(principal, annualRate, years) {
+      if (![principal, annualRate, years].every(Number.isFinite) || principal <= 0 || principal > 1e12 || annualRate < 0 || annualRate > 100 || !Number.isInteger(years) || years < 1 || years > 50) throw new RangeError('Invalid loan inputs');
+      const months = years * 12;
+      const rate = annualRate / 1200;
+      const monthly = rate === 0 ? principal / months : principal * rate / (-Math.expm1(-months * Math.log1p(rate)));
+      const total = monthly * months;
+      return {monthly, total, interest: Math.max(0, total - principal)};
+    }
+    /* UI */
+    (() => {
+      const form = document.getElementById('mortgage-form');
+      const amount = document.getElementById('loan-amount');
+      const rate = document.getElementById('loan-rate');
+      const years = document.getElementById('loan-years');
+      const error = document.getElementById('mortgage-error');
+      const discuss = document.getElementById('mortgage-discuss');
+      let result = null;
+      const t = (en, zh) => window.siteLanguage === 'zh' ? zh : en;
+      const money = value => 'RM ' + new Intl.NumberFormat('en-MY', {minimumFractionDigits:2, maximumFractionDigits:2}).format(value);
+      function render() {
+        document.getElementById('monthly-amount').textContent = result ? money(result.monthly) : 'RM —';
+        document.getElementById('result-principal').textContent = result ? money(result.principal) : 'RM —';
+        document.getElementById('result-interest').textContent = result ? money(result.interest) : 'RM —';
+        document.getElementById('result-total').textContent = result ? money(result.total) : 'RM —';
+        document.getElementById('mortgage-hint').textContent = result ? t('Estimated monthly payment over ' + result.years + ' years at ' + result.rate + '% per year.', '按年利率 ' + result.rate + '%、贷款 ' + result.years + ' 年估算。') : t('Fill in the fields and press Calculate', '填写资料后，点击计算');
+        const text = result ? t('Hi KJ, I’d like to discuss property financing.\nLoan amount: ' + money(result.principal) + '\nAnnual interest: ' + result.rate + '%\nTenure: ' + result.years + ' years\nEstimated monthly repayment: ' + money(result.monthly), 'KJ 你好，我想咨询房贷。\n贷款金额：' + money(result.principal) + '\n年利率：' + result.rate + '%\n年限：' + result.years + ' 年\n预估月供：' + money(result.monthly)) : t('Hi KJ, I’d like to discuss property financing.', 'KJ 你好，我想咨询房贷。');
+        discuss.href = 'https://wa.me/601117776884?text=' + encodeURIComponent(text);
+      }
+      form.addEventListener('input', () => { result = null; error.textContent = ''; [amount, rate, years].forEach(input => input.removeAttribute('aria-invalid')); render(); });
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        error.textContent = '';
+        const raw = amount.value.trim();
+        const principal = /^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{1,2})?$/.test(raw) ? Number(raw.replace(/,/g, '')) : NaN;
+        const annualRate = rate.value.trim() === '' ? NaN : Number(rate.value);
+        const term = years.value.trim() === '' ? NaN : Number(years.value);
+        let invalid = null;
+        if (!Number.isFinite(principal) || principal <= 0 || principal > 1e12) invalid = amount;
+        else if (!Number.isFinite(annualRate) || annualRate < 0 || annualRate > 100) invalid = rate;
+        else if (!Number.isInteger(term) || term < 1 || term > 50) invalid = years;
+        if (invalid) {
+          result = null; render();
+          error.textContent = t('Enter a positive loan amount, an annual rate from 0–100%, and a whole tenure from 1–50 years.', '请输入大于零的贷款金额、0–100% 的年利率，以及 1–50 年的整数年限。');
+          invalid.setAttribute('aria-invalid', 'true'); invalid.focus(); return;
+        }
+        result = {...calculateMortgage(principal, annualRate, term), principal, rate:annualRate, years:term};
+        render();
+      });
+      window.addEventListener('site-language-change', () => { error.textContent = ''; render(); });
+      render();
+    })();
+  </script>
+<!-- EDIT: English / Chinese translations. Keep facts and names consistent in both languages. -->
+  <script id="language-script">
+  (() => {
+    const pairs = [["About","关于我"],["Services","服务"],["Listings","房源"],["Calculator","房贷计算器"],["Testimonials","客户评价"],["Contact","联系我"],["Menu","菜单"],["Skip to content","跳至正文"],["Your property journey. Personally guided.","你的房产之路，我用心陪伴。"],["Buy with less worry,","买房不费心，"],["Live with more comfort.","住的更舒心。"],["I know Johor Bahru, and take the time to understand your needs. Whether buying, selling or investing, I’m KJ Goh. I bring local experience to your decisions and direct communication to every step.","熟悉新山，也认真了解你的需求。无论买房、卖房还是投资，我是 KJ Goh，用本地经验帮你判断，用直接沟通推进每一步。"],["Explore featured homes","查看精选房源"],["WhatsApp KJ","WhatsApp 联系 KJ"],["HOMES & CONDOMINIUMS","住宅与公寓"],["SHOPLOTS & COMMERCIAL","店铺与商业房产"],["BUY · SELL · INVEST","买房 · 卖房 · 投资"],["Meet your property partner","认识你的房产伙伴"],["Local knowledge.","深耕本地。"],["Personal commitment.","用心服务。"],["I’m KJ Goh, MR (REN44970), a real-estate agent serving families and investors across Iskandar Puteri. For eight years, I’ve helped clients buy and sell homes, condos, shoplots, and commercial property, completing more than 150 transactions worth over RM200 million.","我是 KJ Goh，MR（REN44970），在依斯干达布特拉为家庭和投资者提供房产服务。八年来，我协助客户买卖住宅、公寓、店铺和商业房产，完成超过 150 宗交易，总成交额超过 RM2 亿。"],["I focus on the details that shape a sound decision: location, pricing, rental potential, tenancy, and the terms behind each offer. Whether your family is moving, you are purchasing an investment, or you are selling an existing property, I offer direct guidance in English, Mandarin, and Bahasa Malaysia. Share plans with me, and we can consider your next move together.","我重视影响决定的每个细节：地段、价格、出租潜力、租约，以及每份报价的条件。无论是换个家、购置投资房产，还是出售现有物业，我都能以英语、华语或马来语提供直接的指导。告诉我你的计划，我们一起考虑下一步。"],["8 years","8 年"],["Helping clients move forward","陪伴客户迈向下一步"],["Completed transactions","已完成交易"],["Total transaction value","总成交额"],["Find a place for your next chapter","为下一阶段，找到合适的房产"],["Featured listings","精选房源"],["Three properties from my NextSix portfolio, from a furnished studio to a garden cluster home.","精选三个 NextSix 房源，从家具齐全的单间公寓，到带花园的围篱式住宅。"],["All listings on NextSix ↗","在 NextSix 查看全部房源 ↗"],["For sale · Cluster house","出售 · 围篱式住宅"],["For sale · Terrace house","出售 · 排楼"],["For sale · Condominium","出售 · 公寓"],["4 beds","4 间卧室"],["3 baths","3 间浴室"],["Studio","单间公寓"],["1 bath","1 间浴室"],["2,044 sqft built-up","建筑面积 2,044 平方尺"],["1,300 sqft built-up","建筑面积 1,300 平方尺"],["521 sqft built-up","建筑面积 521 平方尺"],["View on NextSix ↗","在 NextSix 查看详情 ↗"],["NextSix area: Johor Bahru, Johor","NextSix 区域分类：柔佛新山"],["Details checked against the individual NextSix pages on 6 November 2026. Prices and availability may change. Links open in a new tab.","房源资料已于 2026 年 11 月 6 日对照各自的 NextSix 页面核实。价格和出售状态可能变动，链接将在新标签页打开。"],["A thoughtful approach to property","认真看待每一次房产决定"],["The details matter.","细节值得认真看待。"],["So does having someone on your side.","你的需求，也值得用心对待。"],["01 / LOCAL PERSPECTIVE","01 / 本地经验"],["Look beyond the address","看地段，更看实际价值"],["Consider location, pricing and rental potential in the context of your family’s needs or investment plans.","结合家庭需求或投资计划，一起考虑地段、价格和出租潜力。"],["02 / CLEAR GUIDANCE","02 / 清晰指导"],["Understand the offer","看懂报价背后的条件"],["Work through tenancy details and the terms behind each offer, so you can make a considered decision.","梳理租约细节和每份报价的条款，让你想清楚，再做决定。"],["03 / PERSONAL COMMUNICATION","03 / 直接沟通"],["A conversation in your language","用你熟悉的语言沟通"],["Discuss your options directly in English, Mandarin or Bahasa Malaysia, with guidance shaped around your next move.","用英语、华语或马来语直接交流，围绕你的下一步，提供合适的建议。"],["Client perspectives","客户的故事"],["Every move has a story.","每一次买卖，都有故事。"],["Testimonial placeholder · Buyer","客户评价待补充 · 买家"],["Testimonial placeholder · Seller","客户评价待补充 · 卖家"],["A client’s home-buying story will appear here once their feedback and permission are available.","获得客户反馈与授权后，这里将分享他们的买房经历。"],["A client’s selling experience will appear here once their feedback and permission are available.","获得客户反馈与授权后，这里将分享他们的卖房经历。"],["Client name and property area to be added","客户姓名与房产区域待补充"],["A few questions, answered","你可能想了解的问题"],["Which areas and property types do you cover?","你服务哪些地区和房产类型？"],["I serve families and investors across Iskandar Puteri, covering homes, condos, shoplots and commercial property.","我在依斯干达布特拉为家庭和投资者提供服务，涵盖住宅、公寓、店铺和商业房产。"],["Which languages can we speak in?","可以使用哪些语言沟通？"],["I offer guidance in English, Mandarin and Bahasa Malaysia.","我可以用英语、华语和马来语提供指导。"],["How can I arrange a viewing or discuss a sale?","如何预约看房或咨询卖房？"],["WhatsApp me on 01117776884 with the property you are interested in, or share your location, budget and plans. We can discuss the next steps together.","通过 WhatsApp 01117776884 告诉我你感兴趣的房源，或分享你的目标区域、预算和计划，我们一起商量下一步。"],["Let’s consider your next move","一起商量你的下一步"],["Good decisions start","好的决定，"],["with a conversation.","从聊一聊开始。"],["Buying, selling or exploring your options? Tell me a little about your plans, and we can take it from there.","想买房、卖房，或先了解选择？告诉我你的计划，我们从这里开始。"],["Your name","你的姓名"],["Phone number","电话号码"],["Include your country code if outside Malaysia.","马来西亚以外的号码，请加上国家区号。"],["Your property plans","你的房产计划"],["Continue to WhatsApp","前往 WhatsApp"],["Your details are added to a WhatsApp draft for KJ Goh. Review the message and press Send in WhatsApp. This page does not store your enquiry.","你的资料会加入发给 KJ Goh 的 WhatsApp 草稿。请确认内容后，在 WhatsApp 点击发送。本页面不会储存你的咨询资料。"],["How should I address you?","请问怎么称呼你？"],["e.g. 011 1234 5678","例如 011 1234 5678"],["I’m looking to buy / sell in… My budget or target price is…","我想在……买房／卖房，预算或目标价格是……"],["YOUR NEXT MOVE, PERSONALLY GUIDED.","你的下一步，我用心陪伴。"],["My NextSix profile ↗","我的 NextSix 主页 ↗"],["Get in touch ↗","联系我 ↗"],["KJ Goh. All rights reserved. Property details are subject to confirmation.","KJ Goh。保留所有权利。房产资料以最终确认为准。"],["Plan ahead","提前规划"],["Mortgage Calculator","房贷计算器"],["Get a quick estimate of your monthly repayment for a residential or commercial property in Johor Bahru.","想在新山购买住宅或商业房产？先算一算预估月供，让预算更清楚。"],["Loan amount","贷款金额"],["Interest rate (per year)","年利率"],["Loan tenure (years)","贷款年限（年）"],["Yrs","年"],["e.g. 450,000","例如 450,000"],["e.g. 4.0","例如 4.0"],["e.g. 30","例如 30"],["Calculate Monthly Mortgage","计算每月供款"],["Estimated monthly repayment","预估每月供款"],["Fill in the fields and press Calculate","填写资料后，点击计算"],["Total interest","总利息"],["Total payment","总还款金额"],["Discuss This With KJ Goh","与 KJ Goh 咨询房贷"],["This calculator estimates a fixed-rate, fully amortising loan with monthly repayments. It excludes fees, insurance and rate changes. Results are for reference only, not financial advice or a loan offer. Actual repayments and eligibility depend on the bank’s assessment. Speak with KJ Goh or your bank for an accurate quote.","本计算器按固定利率、每月等额本息还款估算，不包括手续费、保险或利率变动。结果仅供参考，不构成财务建议或贷款承诺。实际还款额与贷款资格以银行评估为准，请向 KJ Goh 或银行了解准确报价。"],["Main navigation","主导航"],["Chat with KJ Goh on WhatsApp","通过 WhatsApp 联系 KJ Goh"],["KJ Goh, real estate agent serving Iskandar Puteri, Johor","KJ Goh，服务柔佛依斯干达布特拉的房产中介"],["Side garden and covered patio of the Eco Botanic at The Commune corner cluster house in Iskandar Puteri, Johor","柔佛依斯干达布特拉 Eco Botanic The Commune 角头围篱式住宅的侧花园和有顶露台"],["Renovated living room with a sectional sofa and fitted TV wall in the Taman Bukit Indah two-storey terrace house, Iskandar Puteri","依斯干达布特拉 Taman Bukit Indah 双层排楼的装修客厅、组合沙发和电视墙"],["Fitted kitchenette and furnished studio interior with balcony at Almas Residence, Puteri Harbour, Iskandar Puteri","依斯干达布特拉公主港 Almas Residence 单间公寓的厨房、家具和阳台"]];
+    const normalise = text => text.replace(/\s+/g, ' ').trim();
+    const dictionary = new Map();
+    pairs.forEach(pair => { dictionary.set(normalise(pair[0]), pair); dictionary.set(normalise(pair[1]), pair); });
+    const texts = [];
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (node.parentElement.closest('script,style,.language-switch')) continue;
+      const pair = dictionary.get(normalise(node.nodeValue));
+      if (pair) texts.push({node,pair});
+    }
+    const attributes = [];
+    document.querySelectorAll('[placeholder],[aria-label],img[alt]').forEach(element => {
+      ['placeholder','aria-label','alt'].forEach(name => {
+        const value = element.getAttribute(name);
+        const pair = value && dictionary.get(normalise(value));
+        if (pair) attributes.push({element,name,pair});
+      });
+    });
+    function setLanguage(language) {
+      window.siteLanguage = language;
+      const index = language === 'zh' ? 1 : 0;
+      texts.forEach(({node,pair}) => {node.nodeValue = pair[index];});
+      attributes.forEach(({element,name,pair}) => element.setAttribute(name,pair[index]));
+      document.documentElement.lang = language === 'zh' ? 'zh-Hans' : 'en-MY';
+      document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.language === language)));
+      document.querySelectorAll('#hero-title,.hero-copy').forEach(element => element.lang = language === 'zh' ? 'zh-Hans' : 'en');
+      try {localStorage.setItem('kj-goh-language',language);} catch {}
+      document.title = language === 'zh' ? 'KJ Goh｜新山与依斯干达布特拉房产中介｜REN44970' : 'KJ Goh | Iskandar Puteri Real Estate | REN44970';
+      document.getElementById('form-status').textContent = '';
+      window.dispatchEvent(new Event('site-language-change'));
+    }
+    document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click',() => setLanguage(button.dataset.language)));
+    let language = 'zh';
+    try {if (localStorage.getItem('kj-goh-language') === 'en') language = 'en';} catch {}
+    setLanguage(language);
+  })();
   </script>
 </body>
 </html>
