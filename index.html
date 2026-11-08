@@ -138,6 +138,9 @@ header .brand-subtitle{font-family:Inter,sans-serif;font-size:10px;font-weight:6
 /* EDIT: Keep the first listing clear of the sticky navigation after paging. */
 #listing-grid{scroll-margin-top:12px}
 @media(max-width:1100px){#listing-grid{scroll-margin-top:6px}}
+/* EDIT: Compact listing cards, image height and internal spacing. */
+#listing-grid{gap:22px}#listing-grid .photo img{height:190px;width:100%;object-fit:cover}#listing-grid .property-body{padding:20px}#listing-grid .price{font-size:21px;margin-bottom:12px}#listing-grid h3{font-size:15px;line-height:1.5}#listing-grid .location{font-size:13px;line-height:1.6;margin-top:12px}#listing-grid .specs{gap:6px;margin-top:18px;margin-bottom:18px}#listing-grid .specs span{font-size:11px;padding:5px 7px}#listing-grid .btn{font-size:13px;min-height:42px;padding:10px 14px}
+@media(max-width:600px){#listing-grid{gap:20px}#listing-grid .photo img{height:180px}#listing-grid .property-body{padding:18px}#listing-grid .price{font-size:21px}}
 </style>
   <!-- EDIT: REN44970 agrees with the bio and NextSix; supplied ABOUT ME said REN449700. Confirm before launch. -->
   <!-- EDIT: Structured data must stay consistent with the visible contact details and FAQ. -->
