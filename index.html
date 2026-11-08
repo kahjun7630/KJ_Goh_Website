@@ -153,6 +153,9 @@ header .brand-subtitle{font-family:Inter,sans-serif;font-size:10px;font-weight:6
 /* EDIT: Rounded listing filter buttons, matching the selected reference. */
 .listing-filters{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 22px}.listing-filters button{border:1px solid #ded4c8;border-radius:100px;background:#fff;color:#342820;min-height:46px;padding:10px 23px;font-size:15px;font-weight:600;line-height:1.5;transition:background .15s,color .15s}.listing-filters button[aria-pressed="true"]{background:#342820;border-color:#342820;color:#fff}.listing-filters button:hover{border-color:#8a672f}.listing-filters button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media(max-width:600px){.listing-filters{gap:8px;margin-bottom:18px}.listing-filters button{padding:9px 16px;font-size:14px;min-height:44px}}
+/* EDIT: Keyword field followed by the search action. */
+.listing-search .listing-search-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.listing-search-controls .listing-search-submit{color:#fff;min-width:120px;white-space:nowrap}
+@media(max-width:600px){.listing-search-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.listing-search-controls input{width:100%;min-width:0}.listing-search-controls .listing-search-submit{min-width:0;font-size:13px;padding:10px 12px}.listing-search-controls #listing-search-clear{grid-column:1/-1;justify-self:start}}
 </style>
   <!-- EDIT: REN44970 agrees with the bio and NextSix; supplied ABOUT ME said REN449700. Confirm before launch. -->
   <!-- EDIT: Structured data must stay consistent with the visible contact details and FAQ. -->
@@ -221,8 +224,8 @@ header .brand-subtitle{font-family:Inter,sans-serif;font-size:10px;font-weight:6
         <!-- EDIT: Property category filters. Featured restores the complete portfolio in its original order. -->
         <div class="listing-filters" id="listing-filters" role="group" aria-label="Filter properties"><button type="button" data-listing-filter="all" aria-pressed="true">Featured</button><button type="button" data-listing-filter="sale" aria-pressed="false">Buy</button><button type="button" data-listing-filter="rent" aria-pressed="false">Rent</button><button type="button" data-listing-filter="residential" aria-pressed="false">Residential</button><button type="button" data-listing-filter="commercial" aria-pressed="false">Commercial</button><button type="button" data-listing-filter="industrial" aria-pressed="false">Industrial</button></div>
         <form class="listing-search" id="listing-search-form" role="search" aria-label="Search properties">
-          <label for="listing-search">Search properties</label>
-          <div class="listing-search-controls"><input id="listing-search" type="search" autocomplete="off" maxlength="120" placeholder="e.g. Bukit Indah, Almas, condo, rent" aria-describedby="listing-search-help listing-search-status"><button type="button" id="listing-search-clear" class="btn btn-outline" hidden>Clear search</button></div>
+          <!-- EDIT: Accessible search label; visible submit button follows the keyword field. --><label class="listing-search-label" for="listing-search">Search properties</label>
+          <div class="listing-search-controls"><input id="listing-search" type="search" autocomplete="off" maxlength="120" placeholder="e.g. Bukit Indah, Almas, condo, rent" aria-describedby="listing-search-help listing-search-status"><button type="submit" class="btn btn-dark listing-search-submit">Search properties</button><button type="button" id="listing-search-clear" class="btn btn-outline" hidden>Clear search</button></div>
           <p id="listing-search-help">Search by property name, area or type. Matching listings appear first.</p>
           <p id="listing-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
         </form>
